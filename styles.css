@@ -130,7 +130,12 @@ h2 {
   background-color: white;
   place-content: center;
   border: 1px solid rgba(0, 0, 0, 0.3);
+  font: bold 1rem var(--main-font);
   padding: 10px;
+}
+
+.task-title span {
+  font: normal 1rem var(--main-font);
 }
 
 .delete-task-btn {
