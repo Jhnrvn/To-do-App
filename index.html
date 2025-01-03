@@ -13,14 +13,14 @@
     <main>
       <div class="container">
         <!-- add task form -->
-        <form>
+        <form id="task-form">
           <div class="form-group">
             <input type="text" id="task-input" class="task-input" placeholder="Enter you Task" />
             <button type="submit" id="add-task-btn" class="add-task-btn">Add Task</button>
           </div>
         </form>
-        <h2>Tasks List</h2>
-        <div class="task-list-container">
+        <h2 id="task-header-text">Tasks List</h2>
+        <div class="task-list-container" id="task-list-container">
           <div class="task">
             <p class="task-title">Task 1</p>
             <button type="button" class="delete-task-btn"><i class="fa-solid fa-trash-can"></i></button>
