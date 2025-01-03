@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ToDo List</title>
+    <title>To-do List</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
-      <h1>My ToDo List</h1>
+      <h1>My To-do List</h1>
     </header>
     <main>
       <div class="container">
@@ -25,6 +25,13 @@
         <p class="task-count" id="task-count-text">You don't have any tasks</p>
       </div>
     </main>
+    <footer>
+      <p id="copyright"></p>
+      <script>
+        const currentYear = new Date().getFullYear();
+        document.getElementById("copyright").innerHTML = `&copy; ${currentYear} Jhnrvn. All rights reserved.`;
+      </script>
+    </footer>
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/23c655eb58.js" crossorigin="anonymous"></script>
     <!-- main script -->

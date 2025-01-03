@@ -28,6 +28,7 @@ const updateTaskListContainer = () => {
 
 if (taskList) {
   updateTaskListContainer();
+  checkTaskCount();
 }
 
 // delete task
@@ -86,13 +87,13 @@ const addTask = () => {
 taskInput.addEventListener("keydown", (e) => {
   if (e.key === "Enter") {
     addTask();
-  } else if (taskInput.value.length >= 30) {
-    taskHeaderText.innerText = "Please enter a maximum of 30 characters";
+  } else if (taskInput.value.length >= 40) {
+    taskHeaderText.innerText = "Please enter a maximum of 40 characters";
     setTimeout(() => {
       taskHeaderText.innerText = "Tasks List";
     }, 3000);
   }
-  taskInput.value = taskInput.value.slice(0, 30);
+  taskInput.value = taskInput.value.slice(0, 40);
   console.log(taskInput.value.length);
 });
 

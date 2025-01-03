@@ -37,6 +37,11 @@
   background: var(--main-color);
 }
 
+body {
+  width: 100%;
+  height: 100%;
+}
+
 header {
   width: 100%;
   height: 60px;
@@ -160,6 +165,17 @@ h2 {
   font: normal 1.2rem var(--main-font);
 }
 
-.hidden {
-  display: none;
+footer {
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(145deg, var(--main-color), var(--second-color));
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+;
+}
+
+#copyright{
+  font: normal 1rem var(--main-font);
+  color: white;
 }
