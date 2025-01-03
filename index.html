@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>My ToDo List</h1>
+    </header>
+    <main>
+      <div class="container">
+        <!-- add task form -->
+        <form>
+          <div class="form-group">
+            <input type="text" id="task-input" class="task-input" placeholder="Enter you Task" />
+            <button type="submit" id="add-task-btn" class="add-task-btn">Add Task</button>
+          </div>
+        </form>
+        <h2>Tasks List</h2>
+        <div class="task-list-container">
+          <div class="task">
+            <p class="task-title">Task 1</p>
+            <button type="button" class="delete-task-btn"><i class="fa-solid fa-trash-can"></i></button>
+          </div>
+          <div class="task">
+            <p class="task-title">Task 1</p>
+            <button type="button" class="delete-task-btn"><i class="fa-solid fa-trash-can"></i></button>
+          </div>
+          <div class="task">
+            <p class="task-title">Task 1</p>
+            <button type="button" class="delete-task-btn"><i class="fa-solid fa-trash-can"></i></button>
+          </div>
+        </div>
+        <p class="task-count">You have <span>0</span> tasks</p>
+      </div>
+    </main>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/23c655eb58.js" crossorigin="anonymous"></script>
+    <!-- main script -->
+    <script src="script.js"></script>
+  </body>
+</html>
