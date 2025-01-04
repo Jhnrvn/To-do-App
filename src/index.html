@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-do App</title>
+    <link rel="stylesheet" href="/dist/styles.css" />
+  </head>
+  <body>
+    <!-- note : header -->
+    <header
+      class="w-full h-[60px] bg-gradient-to-r from-primary to-secondary align grid place-items-center fixed top-0 left-0 z-10"
+    >
+      <h1 class="text-center font-roboto font-bold text-3xl text-white">My To-do List</h1>
+    </header>
+    <main class="w-full min-h-screen bg-gray-50 grid place-content-center">
+      <div class="w-[600px] h-[500px] bg-white m-[100px] border border-solid border-gray-300 p-5">
+        <!-- note : form to add task  -->
+        <form class="w-full border border-solid border-gray-400 relative">
+          <input type="text" placeholder="Enter you Task" class="w-full h-10 p-2.5 focus:outline-none" />
+          <!-- note : button to add task -->
+          <button
+            type="submit"
+            class="w-[100px] h-10 bg-secondary text-white absolute top-0 right-0 hover:bg-primary transition-colors delay-100 ease-linear"
+          >
+            Add Task
+          </button>
+        </form>
+        <!-- note : task list header -->
+        <p class="text-center text-2xl my-3">Task List</p>
+        <!-- note : task list container -->
+        <div class="w-full h-[300px] bg-indigo-100 mb-5 p-2">
+          <div class="container min-h-20 bg-white mb-2 p-3">
+            <p class="font-bold">Task 1: <span class="font-semibold">study javascript</span></p>
+            <div class="text-justify p-5">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam, eum aliquid distinctio consequuntur non
+              fugiat ut excepturi ea suscipit possimus!
+            </div>
+            <!-- note : button -->
+            <div class="container flex justify-end">
+              <button
+                class="w-[100px] h-[30px] bg-red-500 text-white transition-colors delay-100 ease-linear hover:bg-red-600"
+              >
+                <i class="fa-solid fa-trash"></i>
+              </button>
+            </div>
+          </div>
+          <div class="container min-h-20 bg-white mb-1"></div>
+        </div>
+        <!-- note : no task message -->
+        <p class="text-center text-xl">You don't have any task</p>
+      </div>
+    </main>
+    <footer class="w-full h-40 bg-primary grid place-content-center">
+      <p id="footer-text" class="text-center text-white"></p>
+      <script>
+        const currentYear = new Date().getFullYear();
+        const footerText = document.getElementById("footer-text");
+        footerText.innerHTML = `&copy; ${currentYear} Jhnrvn. All rights reserved.`;
+      </script>
+      <!-- note : fontAwesome -->
+      <script src="https://kit.fontawesome.com/23c655eb58.js" crossorigin="anonymous"></script>
+      <script src="./script.js"></script>
+    </footer>
+  </body>
+</html>
