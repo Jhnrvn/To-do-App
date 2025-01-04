@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build-css": "postcss src/styles.css -o dist/styles.css --watch"
+    "build-css": "postcss src/styles.css -o dist/styles.css --watch",
+    "build": "postcss src/styles.css -o dist/styles.css"
   },
   "keywords": [],
   "author": "",

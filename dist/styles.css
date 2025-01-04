@@ -576,44 +576,26 @@ video {
 .h-10 {
   height: 2.5rem;
 }
-.h-40 {
-  height: 10rem;
-}
-.h-\[300px\] {
-  height: 300px;
+.h-32 {
+  height: 8rem;
 }
 .h-\[35px\] {
   height: 35px;
 }
-.h-\[60px\] {
-  height: 60px;
-}
-.h-\[00px\] {
-  height: 00px;
-}
 .h-\[400px\] {
   height: 400px;
 }
-.h-32 {
-  height: 8rem;
+.h-\[60px\] {
+  height: 60px;
 }
 .min-h-20 {
   min-height: 5rem;
 }
-.min-h-\[500px\] {
-  min-height: 500px;
+.min-h-\[600px\] {
+  min-height: 600px;
 }
 .min-h-screen {
   min-height: 100vh;
-}
-.min-h-10 {
-  min-height: 2.5rem;
-}
-.min-h-2 {
-  min-height: 0.5rem;
-}
-.min-h-\[600px\] {
-  min-height: 600px;
 }
 .w-\[100px\] {
   width: 100px;
@@ -696,17 +678,9 @@ video {
 .p-5 {
   padding: 1.25rem;
 }
-.px-3 {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
-}
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
 }
 .py-2 {
   padding-top: 0.5rem;
@@ -807,14 +781,6 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(46 41 78 / var(--tw-bg-opacity, 1));
 }
-.hover\:text-red-600:hover {
-  --tw-text-opacity: 1;
-  color: rgb(220 38 38 / var(--tw-text-opacity, 1));
-}
-.hover\:text-red-800:hover {
-  --tw-text-opacity: 1;
-  color: rgb(153 27 27 / var(--tw-text-opacity, 1));
-}
 .hover\:text-red-700:hover {
   --tw-text-opacity: 1;
   color: rgb(185 28 28 / var(--tw-text-opacity, 1));
@@ -827,10 +793,6 @@ video {
 
   .sm\:w-\[400px\] {
     width: 400px;
-  }
-
-  .sm\:text-center {
-    text-align: center;
   }
 
   .sm\:text-2xl {
